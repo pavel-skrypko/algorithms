@@ -1,2 +1,5 @@
 # IDE and tools
 .idea
+
+# Dependencies
+node_modules
