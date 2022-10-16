@@ -27,18 +27,18 @@ describe('Havershine formula. Distance between two coordinates', () => {
   test('Should return distance using Earth radius in meters', () => {
     const expected = 123.76496751312989;
     const result = haversine(coordinateOne, coordinateTwo, EEarthRadius.M);
-    expect(result).toBe(expected);
+    expect(result).toBeCloseTo(expected);
   });
 
   test('Should return distance using Earth radius in kilometers', () => {
     const expected = 0.12376496751312989;
     const result = haversine(coordinateOne, coordinateTwo, EEarthRadius.KM);
-    expect(result).toBe(expected);
+    expect(result).toBeCloseTo(expected);
   });
 
   test('Should return distance using Earth radius in miles', () => {
     const expected = 0.07690872804653606;
     const result = haversine(coordinateOne, coordinateTwo, EEarthRadius.MILE);
-    expect(result).toBe(expected);
+    expect(result).toBeCloseTo(expected);
   });
 });
